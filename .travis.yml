@@ -1,0 +1,9 @@
+language: java
+jdk: openjdk12
+cache:
+  directories: [/Users/franciscog@kainos.com/.m2]
+notifications:
+  email:
+    recipients: franciscog@kainos.com
+    on_failure: always
+    on_success: never
