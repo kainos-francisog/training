@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-import employee_stuff.Employee; 
+import main.data.Employee;
 
 class EmployeeTest {
 

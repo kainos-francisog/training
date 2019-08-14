@@ -1,8 +1,11 @@
-package employee_stuff;
+package main.data;
 
-import java.util.Comparator;
+import java.util.logging.Logger;
 
 public class Employee {
+
+	private static Logger log = Logger.getLogger(Employee.class.getName());
+
 	private String name;
 	private int number;
 	private float salary;
@@ -71,6 +74,7 @@ public class Employee {
 
 	public void setSalary(float newSalary) {
 		if (newSalary >= MIN_SALARY) {
+			log.info("Employee " + number + " changed salary from: " + this.salary  + " to:" + newSalary);
 			this.salary = newSalary;
 		} else {
 			throw new IllegalArgumentException("new salary below minimum");
